@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css style</title>
+        <meta charset="utf-8"/>
+         <!-- Css Externo:
+        - Vantagens: É uma boa prática, a estrutura fica mais limpo e
+        o mesmo arquivo pode ser usado para outras páginas.
+        - Desvantagens: Até que o css seja carregado, a página pode não processar corretamente.
+        --> 
+        <link rel="stylesheet" href="Externo.css">
+       
+        <!-- Css Interno:
+        - Vantagens: Só uma página é afetada pelo estilo, não há necessidade de carregar vários arquivos.
+        - Desvantagens: Aumento de tempo no carregamento da página e 
+        não é útil quando se deseja usar a mesma folha de estilo em outro documentos.
+        -->
+        <style>
+            .section{
+                font-size: 20px;
+                font-family: Arial;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body> 
+        <!-- Css Inline:
+        - Vantagens: Tem maior especificidade/preferência, reduz solicitações http
+        e é útil para soluções rápidas.
+        - Desvantagens: Não é uma boa pratica organizacional e deve ser aplicado a cada elemento.
+        -->
+        <h1 style="text-align:center;">Css Interno, Externo e Inline</h1>
+
+        <section>
+            Agora estamos familiarizados com diferentes maneiras de adicionar CSS ao nosso site e conhecer as diferenças entre as páginas de estilo internas, externas e inline.
+        </section>
+    </body>
+</html>
