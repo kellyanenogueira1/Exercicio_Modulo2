@@ -1,0 +1,66 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav ul li{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    background-color:rgba(138, 108, 103, 0.575)
+}
+ a:link{
+    color: black;
+ }
+
+/* Primeiro exemplo - display inline-block */
+.nav-inline-block {
+    background-color: red;
+    border:solid 2px green;
+  
+}
+.nav-inline-block div {
+    display: inline-block;
+    padding: 5px 0px;
+    border: solid 2px purple;
+    
+}
+.nav-inline-block ul li{
+    display: inline-block;
+    padding: 5px 2px;
+    border: solid 2px black;
+}
+    .nav-inline-block ul{
+        border: solid 2px yellow;
+        text-align: right;
+        width: 250px;
+    }
+
+
+
+
+
+/* Segundo exemplo - float */
+.nav-float{
+    background-color:green;
+}
+.nav-float div{
+    float: left;
+}
+.nav-float ul li {
+    clear: left;
+    float: right;
+}
+
+
+/* Terceiro exemplo - display flex */
+.nav-flex{
+    clear: both;
+    background-color: blue;
+    display: flex;
+}
