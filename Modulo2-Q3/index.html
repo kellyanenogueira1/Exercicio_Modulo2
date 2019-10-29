@@ -4,13 +4,70 @@
         <title>Keyframes</title>
         <meta charset="utf-8">
         <style>
-            @keyframes animation{
+            body{
+                background-color: teal;
+            }
+            section{
+                background-color: white;
+                border: solid 2px black;
+                box-shadow: 0px 0px 0px 0px grey;
+                width: 400px;
+                height: 300px;
+                margin: auto;
+                margin-top: 150px;
+                text-align: justify;
+                padding: 5px;
+            }
+            .img-animation{
+                padding: 0px 0px 0px 60px;
+                width: 20px;
+                height: 20px;
+                animation: img-animation 2s ease-in infinite;
                 
             }
             
+            a{
+                text-decoration: none;
+            }
+            h4{
+                text-align: center;
+            }
+            .div-link{
+                margin: auto;
+                width: 200px;
+            }
+    
+            @keyframes img-animation{
+                0%{
+                    transform: translateX(0px);
+                }   
+                25%{
+                    transform: translateX(20px);
+                }
+                35%{
+                    transform: translateX(35px);
+                }
+                50%{
+                    transform: translateX(50px);
+                }
+                100%{
+                    transform: translateX(0px);
+                }
+            }
+
         </style>
     </head>
     <body>
-
+        <section>
+            <p>Para desenvolver páginas com HTML, basicamente precisamos de um editor de texto, como o Bloco de Notas do Windows, Nano e Emacs no Linux, entre vários outros. Há, ainda, editores com opções avançadas, como recursos de syntax hilghligt e autocomplete,
+            como Sublime Text, Atom, Brackets e Visual Studio Code, que podem ser usados para editar documentos HTML.</p>
+           
+            <div class="div-link">
+                <h4><a href="">www.saibamais.com</a></h4>
+                <img src="./img/cursor_dedo.png" class="img-animation"/>
+            </div>
+           
+        </section>
+       
     </body>
 </html>
