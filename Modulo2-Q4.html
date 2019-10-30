@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Css grid</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                display: grid;
+                margin:50px;
+                grid-template-columns: 15% 10% 25% 25% 25% ;
+                grid-template-rows: 15% 40% 40% 5%;
+               
+            }
+            div{
+                border: solid 2px white;
+                background-color: purple;
+                padding: 5px;
+                text-align: center;
+            }
+            .d2{
+                grid-column-start: 2;
+                grid-column-end: 6;
+                
+            }
+            .d3{
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .d7{
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .d10{
+                grid-column-start: 1;
+                grid-column-end: 6;
+            }
+            
+            .d6{
+                grid-area: 2 / 5 / 4 / 6;
+            }
+           
+          
+        </style>
+    </head>
+    <body>
+        <div class="d1">Logo</div>
+        <div class="d2">Menu</div>
+        <div class="d3">Conteúdo 1</div>
+        <div class="d4">Conteúdo 2</div>
+        <div class="d5">Conteúdo 3</div>
+        <div class="d6">Menu Lateral</div>
+        <div class="d7">Conteúdo 4</div>
+        <div class="d8">Conteúdo 5</div>
+        <div class="d9">Conteúdo 6</div>
+        <div class="d10">Footer</div>
+
+    </body>
+</html>
