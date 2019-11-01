@@ -1,66 +1,87 @@
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
-.nav ul li{
+nav ul li{
     list-style-type: none;
     
 }
 a{
     text-decoration: none;
-}
-li:hover{
-    background-color:rgba(138, 108, 103, 0.575)
-}
- a:link{
     color: black;
+}
+
+ li:hover{
+    background-color:rgba(138, 108, 103, 0.575)
  }
 
 /* Primeiro exemplo - display inline-block */
 .nav-inline-block {
+    height: 40px;
     background-color: red;
-    border:solid 2px green;
-  
+    margin: 5px 0px;
 }
 .nav-inline-block div {
     display: inline-block;
-    padding: 5px 0px;
-    border: solid 2px purple;
-    
+    padding: 10px 0px;
+    position:absolute;
 }
+
 .nav-inline-block ul li{
     display: inline-block;
-    padding: 5px 2px;
-    border: solid 2px black;
+    padding: 10px;
+  
 }
-    .nav-inline-block ul{
-        border: solid 2px yellow;
-        text-align: right;
-        width: 250px;
-    }
-
-
-
+.nav-inline-block ul{
+    width: 280px;
+    position:relative;
+    top: 0px;
+    left:1106px;
+        
+}
 
 
 /* Segundo exemplo - float */
 .nav-float{
     background-color:green;
+    height: 40px; 
+    margin: 0px 0px 5px 0px;
 }
 .nav-float div{
+    padding: 10px 0px;
     float: left;
 }
 .nav-float ul li {
-    clear: left;
+    padding: 10px;
+    float: left;
+    width: 45px;
+}
+.nav-float ul {
     float: right;
 }
 
 
-/* Terceiro exemplo - display flex */
+/* Terceiro exemplo - display flex */ 
 .nav-flex{
     clear: both;
     background-color: blue;
     display: flex;
+    justify-content: space-between;
+    height: 40px;
 }
+
+.nav-flex ul {
+    display: flex;
+    width: 260px;
+}
+.nav-flex div {
+    padding: 10px 0px;
+    
+}
+.nav-flex ul li {
+    padding: 10px;
+    margin: auto;
+}
+
+
